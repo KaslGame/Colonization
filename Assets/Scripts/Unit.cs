@@ -6,16 +6,16 @@ public class Unit : MonoBehaviour
 {
     [SerializeField] private Transform _pocketTransform;
     [SerializeField] private float _speed;
-
-    public bool IsBusy => _isBusy;
-    public bool IsBusyCreateBase => _isBusyCreateBase;
-
+    
     private Transform _baseTransform;
     private Transform _targetPosition;
     private Resourse _selectResource;
 
     private bool _isBusy;
     private bool _isBusyCreateBase;
+
+    public bool IsBusy => _isBusy;
+    public bool IsBusyCreateBase => _isBusyCreateBase;
 
     private void Update()
     {
